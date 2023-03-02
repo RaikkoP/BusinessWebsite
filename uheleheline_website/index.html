@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="et">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e1ff197604.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Company Web</title>
+    <script>
+ // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 58.349451, lng: 26.714685 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+    </script>
+  
+
+</head>
+<body id="home">
+    <nav id="navbar">
+        <h1><span class="text-primary"><i class=" fas fa-book-open"></i>Fir</span>ma</h1>
+        <ul>
+            <li><a href="#home">Avaleht</a></li>
+            <li><a href="#what">Teenused</a></li>
+            <li><a href="#who">Meeskond</a></li>
+            <li><a href="#clients">Kliendid</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">Lihtsalt Tee Midagi</h1>
+        <p class="par">Lorem ipsum dolor sit amet, consectetur adipsisisi elit. Voluptas omnis, laboriosam cum diginissimos corrupti consecteur</p>
+        <a href="what" class="btn btn-primary">Loe Rohkem</a>
+        
+      </div>  
+    </header>
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading">Mida Me<span class="text-primary">Pakkume</span></h2>
+            <div class="items">
+                <div class="item text-center p-1">
+                    <i class="fab fa-codepen fa-2x p-1"></i>
+                    <div>
+                        <h3>Kirjutame</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipsisisi elit. Voluptas omnis, laboriosam cum diginissimos corrupti consecteur</p>
+                    </div>
+                </div>
+                <div class="item text-center p-1">
+                    <i class="fas fa-pencil-alt fa-2x p-1"></i>
+                    <div>
+                        <h3>Kujundame</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipsisisi elit. Voluptas omnis, laboriosam cum diginissimos corrupti consecteur</p>
+                    </div>
+                </div>
+                <div class="item text-center p-1">
+                    <i class="fas fa-bug fa-2x p-1"></i>
+                    <div>
+                        <h3>Silumine</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipsisisi elit. Voluptas omnis, laboriosam cum diginissimos corrupti consecteur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="who">
+        <div class="who-img"></div>
+        <div class="bg-dark p-1">
+            <h2 class="m-heading">Kes <span class="text-primary"Me</span> Oleme</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipsisisi elit. Voluptas omnis, laboriosam cum diginissimos corrupti consecteur</p>
+            <h3>Meie Meeskond</h3>
+            <ul>
+                <li>Kaval Ant: projektijuht</li>
+                <li>Puna Mutsike: arendusjuht</li>
+                <li>Lumi Valguke: consultant</li>
+                <li>Joulu Vana: arendaja</li>
+            </ul>
+        </div>
+        
+    </section>
+    
+    <section id="clients">
+        <h2 class="m-heading text-center">Meie <span class="text-primary">Kliendid</span></h2>
+        <div class="py-1 items">
+            <div><img src="css/img/logo1.png" alt="Klient1"></div>
+            <div><img src="css/img/logo2.png" alt="Klient2"></div>
+            <div><img src="css/img/logo3.png" alt="Klient3"></div>
+            <div><img src="css/img/logo4.png" alt="Klient4"></div>
+            <div><img src="css/img/logo5.png" alt="Klient5"></div>
+        </div>
+    </section>
+        
+    <section id="contact">
+        <div class="p-1 bg-primary contact-form">
+            <h2 class="m-heading">Vota Meiega Uhendust</h2>
+            <p>Taida all olev tabel</p>
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Nimi</label>
+                    <input type="text" id="name" placeholder="Sisesta oma nimi">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Sisesta oma email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="phone" id="phone" placeholder="Sisesta oma sonum">
+                </div>
+                <div class="form-group">
+                    <label for="message">Sonum</label>
+                    <textarea id="message" placeholder="Sisesta oma sonum">
+                    </textarea>
+                </div>
+                <input type="submit" value="Saada" class="btn btn-dark">
+            </form>
+        </div>
+        <div  id="map" class="contact-map"></div>
+    </section>
+    
+    <footer id="footer" class="bg-dark text-center py-1">
+        <p>Koik oigused on kaitstud &copy;2021</p>
+    </footer>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhDw-5KtV59oOk1wvmHmRXJZbdoCJ2L4A&callback=initMap">
+        
+    </script>
+</body>
+</html>
